@@ -1,6 +1,6 @@
 {
-  "domain": "epson_pjlink",
-  "name": "Epson Pjlink",
+  "domain": "epson_monitor",
+  "name": "Epson Monitor",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/epson",
   "requirements": ["pypjlink2==1.2.1"],

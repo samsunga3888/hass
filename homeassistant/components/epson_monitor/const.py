@@ -1,6 +1,6 @@
 """Constants for the epson integration."""
 
-DOMAIN = "epson_pjlink"
+DOMAIN = "epson_monitor"
 SERVICE_SELECT_CMODE = "select_cmode"
 
 ATTR_CMODE = "cmode"
