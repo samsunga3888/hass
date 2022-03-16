@@ -1,0 +1,37 @@
+{
+  "domain": "samsungtv",
+  "name": "Samsung Smart TV",
+  "documentation": "https://www.home-assistant.io/integrations/samsungtv",
+  "requirements": [
+    "getmac==0.8.2",
+    "samsungctl[websocket]==0.7.1",
+    "samsungtvws[async]==2.3.0",
+    "wakeonlan==2.0.1"
+  ],
+  "ssdp": [
+    {
+      "st": "urn:samsung.com:device:RemoteControlReceiver:1"
+    }
+  ],
+  "zeroconf": [
+    {"type":"_airplay._tcp.local.","properties":{"manufacturer":"samsung*"}}
+  ],
+  "dhcp": [
+    {"registered_devices": true},
+    {
+      "hostname": "tizen*"
+    },
+    {"macaddress": "8CC8CD*"},
+    {"macaddress": "606BBD*"},
+    {"macaddress": "F47B5E*"},
+    {"macaddress": "4844F7*"},
+    {"macaddress": "8CEA48*"}
+  ],
+  "codeowners": [
+    "@chemelli74",
+    "@epenet"
+  ],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "loggers": ["samsungctl", "samsungtvws"]
+}
